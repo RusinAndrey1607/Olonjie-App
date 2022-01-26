@@ -122,9 +122,6 @@
             color: $text;
             text-align: center;
             transition: color, 0.45s;
-            &:hover {
-                border-bottom: 1px solid $text;
-            }
         }
     }
 }
