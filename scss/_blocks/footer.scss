@@ -1,0 +1,44 @@
+.footer {
+    &__inner {
+        padding: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+    &__copy {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__link {
+        cursor: pointer;
+        svg {
+            transition: all .5s;
+        }
+        &:hover {
+            svg {
+                transform: scale(1.1);
+            }
+        }
+    }
+    @media(max-width: 760px) {
+        &__inner {
+            padding: 35px 0;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: start;
+            grid-gap: 30px;
+        }
+    }
+}

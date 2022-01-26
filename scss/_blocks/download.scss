@@ -1,0 +1,68 @@
+.download {
+    padding: 140px 10px;
+    background-image: url(../images/download-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__text {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 850px;
+        color: #fff;
+        margin-bottom: 60px;
+    }
+    &__button-wrapper {
+        display: inline-block;
+    }
+    &__button {
+        font-family: "Montserrat", sans-serif;
+        display: inline-block;
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+        color: #ffffff;
+        padding: 15px 43px;
+        border-radius: 10px;
+        transition: all 0.5s;
+        max-height: 60px;
+        max-width: 173px;
+        &--one {
+            margin-right: 16px;
+            border: 1px solid $orange;
+            background: $orange;
+            box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+            &:hover {
+                border: 1px solid #ffffff;
+                background: transparent;
+            }
+        }
+        &--two {
+            border: 1px solid #ffffff;
+            background: transparent;
+            &:hover {
+                background: $orange;
+                border: 1px solid $orange;
+            }
+        }
+    }
+    @media(max-width: 420px) {
+        &__button-wrapper {
+            display: block;
+        }
+        &__button {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            &--one {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

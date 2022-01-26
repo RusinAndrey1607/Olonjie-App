@@ -1,0 +1,132 @@
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.2px;
+    color: $textSecond;
+    &::-webkit-scrollbar {
+        z-index: 10;
+        width: 12px;
+        height: 0;
+        background: #f6f6f6;
+        mix-blend-mode: normal;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: rgba($orange, 0.7);
+    }
+    @media(max-width: 840px) {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    @media(max-width: 540px) {
+        font-size: 20px;
+        line-height: 32px;
+        overflow-x: hidden;
+    }
+    @media(max-width: 460px) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.body.active {
+    overflow-y: hidden;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    color: $text;
+    letter-spacing: 0.2px;
+    margin-bottom: 7px;
+    &--white {
+        color: #ffffff;
+    }
+    @media(max-width: 960px) {
+        font-size: 36px;
+        line-height: 52px;
+    }
+    @media(max-width: 840px) {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    @media(max-width: 790px) {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    @media(max-width: 520px) {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    @media(max-width: 460px) {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    @media(max-width: 420px) {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    @media(max-width: 373px) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: $orange;
+    letter-spacing: 0.1px;
+    &--white {
+        color: #ffffff;
+    }
+    @media(max-width: 960px) {
+        font-size: 22px;
+        line-height: 34px;
+    }
+    @media(max-width: 840px) {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    @media(max-width: 520px) {
+        font-size: 18px;
+        line-height: 36px;
+    }
+}

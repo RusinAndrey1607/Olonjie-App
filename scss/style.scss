@@ -1,0 +1,12 @@
+@import "reset";
+@import "vars";
+@import "global";
+// CODE
+@import "_blocks/header.scss";
+@import "_blocks/top.scss";
+@import "_blocks/phones.scss";
+@import "_blocks/how-works.scss";
+@import "_blocks/download.scss";
+@import "_blocks/footer.scss";
+//
+@import "media";
